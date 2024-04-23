@@ -278,9 +278,7 @@
         margin-bottom: 0px;
     }
 
-    .profile_info {
-        display: block;
-    }
+    
 
 }
 
@@ -400,6 +398,10 @@
 
 .r_order {
     grid-column: 4/9;
+}
+
+.profile_info {
+    display: block;
 }
 
     

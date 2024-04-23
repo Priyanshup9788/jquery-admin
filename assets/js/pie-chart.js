@@ -2,7 +2,7 @@
 var options = {
     series: [8.7, 9.9, 23.8, 32.0, 25.6],
     chart: {
-    width: '150%',
+    width: '100%',
     type: 'donut',
     foreColor:'#838fb9'
   },
@@ -25,7 +25,7 @@ var options = {
     type: 'gradient',
   },
   legend: {
-    show: true,
+    show: false,
     position: 'bottom',
     horizontalAlign: 'center', 
     fontSize: '14px',
