@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Pannel</title>
+
+    <!-- Font css -->
+    <link rel="stylesheet" href="assets/font/stylesheet.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png">
+
+    <!-- remix icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+
+    <!-- font awsome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <!-- map -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+
+    
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/flex.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header class="d-flex f-wrap align-center justify-between">
+        <div class="r-header d-flex f-wrap align-center">
+            <i class="ri-menu-2-fill bar"></i>
+            <div class="searchbar d-flex f-wrap align-center ">
+                <i class="ri-search-line"></i>
+                <input type="search" placeholder="search..." class="srch">
+            </div>
+        </div>
+        <div class="l-header">
+            <ul class="d-flex f-wrap align-center">
+                <li class="country relative">
+                    <a href="javascript:void(0);">
+                        <img src="assets/img/us.svg" alt="country icon">
+                    </a>
+                    <ul class="country_options">
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/us.svg" alt="country icon">
+                            <span>English</span>
+                        </li>
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/india.svg" alt="country icon">
+                            <span>Hindi</span>
+                        </li>
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/germany.svg" alt="country icon">
+                            <span>Deutsche</span>
+                        </li>
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/italy.svg" alt="country icon">
+                            <span>Italian</span>
+                        </li>
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/china.svg" alt="country icon">
+                            <span>中国人</span>
+                        </li>
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/french.svg" alt="country icon">
+                            <span>français</span>
+                        </li>
+                        <li class="d-flex f-wrap align-center">
+                            <img src="assets/img/russia.svg" alt="country icon">
+                            <span>русский</span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="apps"><a href="">
+                        <a href="javascript:void(0);">
+                            <i class="ri-layout-grid-fill"></i>
+                        </a>
+                        <div class="a_dropdown_menu">
+                            <div class="dropdown_row1 d-flex f-wrap align-center justify-between">
+                                <h6 class="a_d_heading"> Web Apps </h6>
+                                <a href="#!" class="g_btn">View all apps
+                                    <i class="ri-arrow-right-s-line align-middle"></i>
+                                </a>
+                            </div>
+                            <div class="dropdown_row2">
+                                <div class="row">
+                                    <div class="w-4">
+                                        <div class="app_box text-center">
+                                            <img src="assets/img/github.png" alt="">
+                                            <span>github</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-4">
+                                        <div class="app_box text-center">
+                                            <img src="assets/img/bitbucket.png" alt="">
+                                            <span>bitbucket</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-4">
+                                        <div class="app_box text-center">
+                                            <img src="assets/img/dribbble.png" alt="">
+                                            <span>dribbble</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-4">
+                                        <div class="app_box text-center">
+                                            <img src="assets/img/dropbox.png" alt="">
+                                            <span>dropbox</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-4">
+                                        <div class="app_box text-center">
+                                            <img src="assets/img/mail_chimp.png" alt="">
+                                            <span>mail_chimp</span>
+                                        </div>
+                                    </div>
+                                    <div class="w-4">
+                                        <div class="app_box text-center">
+                                            <img src="assets/img/slack.png" alt="">
+                                            <span>slack</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                <li>
+                    <a href="">
+                        <i class="ri-shopping-bag-line"></i>
+                    </a>
+                </li>
+                <li class="hide">
+                    <a href="">
+                        <i class="ri-fullscreen-line"></i>
+                    </a>
+                </li>
+                <li class="hide">
+                    <a href="">
+                        <i class="ri-moon-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="ri-notification-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <div class="profile_section">
+                        <div class="profile d-flex f-wrap align-center">
+                            <img src="assets/img/avatar.jpg" alt="profile">
+                            <div class="profile_info">
+                                <p class="uname">Anna Adame</p>
+                                <p class="urol">Founder</p>
+                            </div>
+                        </div>
+                        <div class="profile_list d-flex f-col d-none">
+                           
+                                <!-- d-items -->
+                                <h6 class="d_heading">Welcome Anna!</h6>
+                                <a class="d_item">
+                                    <i class="ri-account-circle-fill"></i>
+                                    <span class="d_item_name">Profile</span>
+                                </a>
+                                <a class="d_item">
+                                    <i class="ri-message-2-line"></i>
+                                    <span class="d_item_name">Message</span>
+                                </a>
+                                <a class="d_item">
+                                    <i class="ri-calendar-check-fill"></i>
+                                    <span class="d_item_name">Taskboard</span>
+                                </a>
+                                <a class="d_item">
+                                    <i class="ri-lifebuoy-line"></i>
+                                    <span class="d_item_name">Help</span>
+                                </a>
+                                <div class="d_divider"></div>
+                                <a class="d_item">
+                                    <i class="ri-wallet-3-fill"></i>
+                                    <span class="d_item_name">Balance :<b> $5971.67</b></span>
+                                </a>
+                                <a class="d_item">
+                                    
+                                    <i class="ri-settings-4-line"></i>
+                                    <span class="d_item_name">Settings</span>
+                                </a>
+                                <a class="d_item">
+                                    <i class="ri-lock-fill"></i>
+                                    <span class="d_item_name">Lock screen</span>
+                                </a>
+                                <a href="./login/login.html" class="d_item">
+                                    <i class="ri-logout-box-r-line"></i>
+                                    <span class="d_item_name">Logout</span>
+                                </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- aside start -->
+    <aside class="">
+        <div class="logo text-center">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <!-- menu -->
+                <li class="title">
+                    <span>Menu</span>
+                </li>
+                <li class="nav-iteam">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-dashboard-2-line"></i>
+                            <span>Dashboard</span>
+                        </div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                    <div class="drop-menu">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Analytics</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>CRM</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Ecommerce</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Crypto</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>NET</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Job</span>
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="nav-iteam">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-apps-2-line"></i>
+                            <span>Apps</span>
+                        </div>
+                        <i class="ri-arrow-right-s-line unrotate"></i>
+                    </a>
+                    <div class="drop-menu">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Calender</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Chart</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Ecommerce</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Tasks</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>CRM</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Crypto</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Invoice</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Support Tickets</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-iteam">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-layout-line"></i>
+                            <span>Layout</span>
+                        </div>
+                        <i class="ri-arrow-right-s-line unrotate"></i>
+                    </a>
+                    <div class="drop-menu">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Horizontal</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Detached</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Two Column</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Hovered</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- pages -->
+                <li class="title">
+                    <span>Pages</span>
+                </li>
+                <li class="nav-iteam">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-account-circle-line"></i>
+                            <span>Authentication</span>
+                        </div>
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+                    <div class="drop-menu">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>sign in</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>sign up</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Password Reset</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Password Create</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Lock screen</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Logout</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Two step Verification</span>
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="nav-iteam">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-article-line"></i>
+                            <span>Pages</span>
+                        </div>
+                        <i class="ri-arrow-right-s-line unrotate"></i>
+                    </a>
+                    <div class="drop-menu">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Starter</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Team</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Timeline</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>FAQs</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Pricing</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Gallery</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Maintanance</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Cooming soon</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Sitemap</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Privacy Policy</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Term & Condition</span>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="nav-iteam">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-rocket-line"></i>
+                            <span>Landing</span>
+                        </div>
+                        <i class="ri-arrow-right-s-line unrotate"></i>
+                    </a>
+                    <div class="drop-menu">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>One Page</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>NFT Landing</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Job</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-2  f-wrap justify-center">
+            <ul>
+                <!-- menu -->
+                <li class="nav-iteam relative">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-dashboard-2-line"></i>
+                        </div>
+                    </a>
+                    <div class="drop-menu  aside-option-set">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Analytics</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>CRM</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Ecommerce</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Crypto</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>NET</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Job</span>
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="nav-iteam relative">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-apps-2-line"></i>
+                        </div>
+                    </a>
+                    <div class="drop-menu aside-option-set">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Calender</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Chart</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Ecommerce</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Projects</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Tasks</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>CRM</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Crypto</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Invoice</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Support Tickets</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-iteam relative">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-layout-line"></i>
+                        </div>
+                    </a>
+                    <div class="drop-menu aside-option-set">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Horizontal</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Detached</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Two Column</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Hovered</span>
+                        </a>
+                    </div>
+                </li>
+
+                <!-- pages -->
+                <li class="title">
+                    <span>..............</span>
+                </li>
+
+                <li class="nav-iteam relative">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-account-circle-line"></i>
+                        </div>
+                    </a>
+                    <div class="drop-menu aside-option-set">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>sign in</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>sign up</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Password Reset</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Password Create</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Lock screen</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Logout</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Two step Verification</span>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="nav-iteam relative">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-article-line"></i>
+                        </div>
+                    </a>
+                    <div class="drop-menu aside-option-set">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Starter</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Team</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Timeline</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>FAQs</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Pricing</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Gallery</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Maintanance</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Cooming soon</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Sitemap</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Privacy Policy</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Term & Condition</span>
+                        </a>
+
+                    </div>
+                </li>
+
+                <li class="nav-iteam relative">
+                    <a href="#" class="d-flex f-wrap justify-between align-center">
+                        <div>
+                            <i class="ri-rocket-line"></i>
+                        </div>
+                    </a>
+                    <div class="drop-menu aside-option-set">
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>One Page</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>NFT Landing</span>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fa-solid fa-minus"></i>
+                            <span>Job</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="main-content">
+        <div class="content">
+            <div class="firstraw d-flex f-wrap align-center justify-between">
+                <div class="greetings-box">
+                    <h4>Good Morning, Anna!</h4>
+                    <p>Here's what's happening with your store today.</p>
+                </div>
+                <div class="dates-products  f-wrap align-center d-none">
+                    <div class="dates d-flex f-wrap">
+                        <input id="date" type="text" value="01 Jan 2022 to 31 Jan 2022" class="datepicker">
+                        <div class="d-icon">
+                            <i class="date-icon ri-calendar-2-line"></i>
+                        </div>
+                    </div>
+                    <div class="add_prod_section d-flex f-wrap">
+                        <div class="add_products">
+                            <button>
+                                <i class="ri-add-circle-line"></i>
+                                Add Product
+                            </button>
+                        </div>
+                        <div class="show_hide">
+                            <i class="ri-pulse-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parent">
+                <div class="earnings ">
+                    <div class="box">
+                        <div class="heading-pnl d-flex f-wrap justify-between">
+                            <span class="earn-heading">TOTAL EARNINGS</span>
+                            <span class="earn-pnl">
+                                <i class="ri-arrow-right-up-line"></i>
+                                +16.24 %
+                            </span>
+                        </div>
+                        <div class="earning">
+                            <p>$<span class="counter" data-speed="1000">559.25</span>k</p>
+                        </div>
+                        <div class="earninghref-symbol d-flex f-wrap align-end justify-between">
+                            <a href="">View net earnings</a>
+                            <i class="ri-money-dollar-circle-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="order">
+                    <div class="box">
+                        <div class="heading-pnl d-flex f-wrap justify-between">
+                            <span class="earn-heading">ORDERS</span>
+                            <span class="earn-pnl">
+                                <i class="ri-arrow-right-down-line"></i>
+                                -3.57 %
+                            </span>
+                        </div>
+                        <div class="earning">
+                            <p class="counter" data-speed="1">36894</p>
+                        </div>
+                        <div class="earninghref-symbol d-flex f-wrap align-end justify-between">
+                            <a href="">View all orders</a>
+                            <i class="ri-shopping-bag-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="box">
+                        <div class="heading-pnl d-flex f-wrap justify-between">
+                            <span class="earn-heading">CUSTOMERS</span>
+                            <span class="earn-pnl">
+                                <i class="ri-arrow-right-up-line"></i>
+                                +29.08 %
+                            </span>
+                        </div>
+                        <div class="earning">
+                            <p>
+                                <span class="counter" data-speed="1">
+                                    183.35</span>M
+                            </p>
+
+                        </div>
+                        <div class="earninghref-symbol d-flex f-wrap align-end justify-between">
+                            <a href="">See details</a>
+                            <i class="ri-account-circle-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mybalance">
+                    <div class="box">
+                        <div class="heading-pnl d-flex f-wrap justify-between">
+                            <span class="earn-heading">MY BALANCE
+
+                            </span>
+                            <span class="earn-pnl">
+                                <i class="ri-arrow-right-up-line"></i>
+                                +0.00 %
+                            </span>
+                        </div>
+                        <div class="earning">
+                            <p>$<span class="counter" data-speed="1">165.89</span>k</p>
+                        </div>
+                        <div class="earninghref-symbol d-flex f-wrap align-end justify-between">
+                            <a href="">Withdraw money</a>
+                            <i class="ri-wallet-line"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph b-r-s">
+                    <div class="g_heading d-flex f-wrap justify-between align-center">
+                        <h4>Revenue</h4>
+                        <div class="graph_buttons">
+                            <button class="g_btn">ALL</button>
+                            <button class="g_btn">1M</button>
+                            <button class="g_btn">6M</button>
+                            <button class="g_btn g_btn_prime">1Y</button>
+                        </div>
+                    </div>
+                    <div class="g_boxes">
+                        <div class="row">
+                            <div class="w-6 w-sm-3">
+                                <div class="gbox gbox1 text-center">
+                                    <h5>7585</h5>
+                                    <p>Orders</p>
+                                </div>
+                            </div>
+                            <div class="w-6 w-sm-3">
+                                <div class="gbox gbox2 text-center">
+                                    <h5>$22.89k</h5>
+                                    <p>Earnings</p>
+                                </div>
+                            </div>
+                            <div class="w-6 w-sm-3">
+                                <div class="gbox gbox3 text-center">
+                                    <h5>367</h5>
+                                    <p>Refunds</p>
+                                </div>
+                            </div>
+                            <div class="w-6 w-sm-3">
+                                <div class="gbox gbox4 text-center">
+                                    <h5>18.92%</h5>
+                                    <p>Conversation Ratio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chart"></div>
+                    
+                </div>
+                <div class="mapsec b-r-s">
+                    <div class="sales-loc d-flex f-wrap align-center justify-between">
+                        <h4>Sales by Location</h4>
+                        <div class="salesbtn">
+                            <button class="g_btn g_btn_prime">Export report</button>
+                        </div>
+                    </div>
+                    <div class="oh">
+                    <div id="map" style="width: 100%; height: 450px"></div>
+                    </div>
+
+                </div>
+                <div class="b-table b-r-s">
+                    <div class="b-table-heading d-flex f-wrap align-center justify-between">
+                        <h4>Best Selling Products</h4>
+                        <a href="" class="d-flex f-wrap">
+                            <span class="b-t-f-1">SORT BY:</span>
+                            <span class="b-t-f-2 d-flex f-wrap">Today
+                                <i class="ri-arrow-drop-down-line"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="t-o-f">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="d-flex ">
+                                        <div class="prod_img">
+                                            <img src="assets/img/prod1.png" alt="">
+                                        </div>
+                                        <div class="prod_info">
+                                            <h5 class="b_name">Branded T-Shirts</h5>
+                                            <span class="b_date">24 Apr 2021</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$29.00</h5>
+                                    <span class="b_p_head">Price</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">62</h5>
+                                    <span class="b_p_head">orders</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">510</h5>
+                                    <span class="b_p_head">Stock</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$1,789</h5>
+                                    <span class="b_p_head">Amount</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="prod_img">
+                                            <img src="assets/img/prod2.png" alt="">
+                                        </div>
+                                        <div class="prod_info">
+                                            <h5 class="b_name">Bentwood Chair</h5>
+                                            <span class="b_date">19 Mar 2021</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$85.20</h5>
+                                    <span class="b_p_head">Price</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">35</h5>
+                                    <span class="b_p_head">orders</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price out">out</h5>
+                                    <span class="b_p_head">Stock</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$2925</h5>
+                                    <span class="b_p_head">Amount</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="prod_img">
+                                            <img src="assets/img/prod3.png" alt="">
+                                        </div>
+                                        <div class="prod_info">
+                                            <h5 class="b_name">Borosil paper Cup</h5>
+                                            <span class="b_date">01 Mar 2021</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$14.00</h5>
+                                    <span class="b_p_head">Price</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">80</h5>
+                                    <span class="b_p_head">orders</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">749</h5>
+                                    <span class="b_p_head">Stock</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$1,120</h5>
+                                    <span class="b_p_head">Amount</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="prod_img">
+                                            <img src="assets/img/prod4.png" alt="">
+                                        </div>
+                                        <div class="prod_info">
+                                            <h5 class="b_name">One Seater Sofa</h5>
+                                            <span class="b_date">11 Feb 2021</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$127.50</h5>
+                                    <span class="b_p_head">Price</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">56</h5>
+                                    <span class="b_p_head">orders</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price out">out</h5>
+                                    <span class="b_p_head">Stock</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$7140</h5>
+                                    <span class="b_p_head">Amount</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex ">
+                                        <div class="prod_img">
+                                            <img src="assets/img/prod5.png" alt="">
+                                        </div>
+                                        <div class="prod_info">
+                                            <h5 class="b_name">Stillbird Helmet</h5>
+                                            <span class="b_date">17 Jan 2021</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$54</h5>
+                                    <span class="b_p_head">Price</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">74</h5>
+                                    <span class="b_p_head">orders</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">805</h5>
+                                    <span class="b_p_head">Stock</span>
+                                </td>
+                                <td>
+                                    <h5 class="b_price">$3996</h5>
+                                    <span class="b_p_head">Amount</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="t_table b-r-s">
+                    <div class="b-table-heading d-flex f-wrap align-center justify-between">
+                        <h4>Top Sellers</h4>
+                        <a href="" class="d-flex f-wrap">
+                            <span class="b-t-f-2 d-flex f-wrap">Report
+                                <i class="ri-arrow-drop-down-line"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="t-o-f">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex ">
+                                            <div class="topsell_img">
+                                                <img src="assets/img/t-img-1.png" alt="">
+                                            </div>
+                                            <div class="prod_info">
+                                                <h5 class="b_name">Stillbird Helmet</h5>
+                                                <span class="b_date">17 Jan 2021</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">Bags and Wallets</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="b_price">8547</h5>
+                                        <span class="b_p_head">Stock</span>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">$541200</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <h5 class="b_price m-10">32%</h5>
+                                            <i class="ri-bar-chart-fill"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex ">
+                                            <div class="topsell_img">
+                                                <img src="assets/img/t-img-2.png" alt="">
+                                            </div>
+                                            <div class="prod_info">
+                                                <h5 class="b_name">Digitech Galaxy</h5>
+                                                <span class="b_date">John Roberts</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">Watches</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="b_price">895</h5>
+                                        <span class="b_p_head">Stock</span>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">$75030</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <h5 class="b_price m-10">79%</h5>
+                                            <i class="ri-bar-chart-fill"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex ">
+                                            <div class="topsell_img">
+                                                <img src="assets/img/t-img-3.png" alt="">
+                                            </div>
+                                            <div class="prod_info">
+                                                <h5 class="b_name">Nesta Technologies</h5>
+                                                <span class="b_date">Harley Fuller</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">Bike Accessories</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="b_price">3470</h5>
+                                        <span class="b_p_head">Stock</span>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">$45600</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <h5 class="b_price m-10">90%</h5>
+                                            <i class="ri-bar-chart-fill"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex ">
+                                            <div class="topsell_img">
+                                                <img src="assets/img/t-img-4.png" alt="">
+                                            </div>
+                                            <div class="prod_info">
+                                                <h5 class="b_name">Zoetic Fashion</h5>
+                                                <span class="b_date">James Bowen</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">Clothes</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="b_price">5488</h5>
+                                        <span class="b_p_head">Stock</span>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">$29456</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <h5 class="b_price m-10">40%</h5>
+                                            <i class="ri-bar-chart-fill"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex ">
+                                            <div class="topsell_img">
+                                                <img src="assets/img/t-img-5.png" alt="">
+                                            </div>
+                                            <div class="prod_info">
+                                                <h5 class="b_name">Meta4Systems</h5>
+                                                <span class="b_date">Zoe Dennis</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">Furniture</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="b_price">4100</h5>
+                                        <span class="b_p_head">Stock</span>
+                                    </td>
+                                    <td>
+                                        <span class="b_p_head">$11260</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <h5 class="b_price m-10">57%</h5>
+                                            <i class="ri-bar-chart-fill"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="round_chart b-r-s">
+                    <div class="b-table-heading d-flex f-wrap align-center justify-between">
+                        <h4>Store Visits by Source</h4>
+                        <a href="" class="d-flex f-wrap">
+                            <span class="b-t-f-2 d-flex f-wrap">Report
+                                <i class="ri-arrow-drop-down-line"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="d-flex f-wrap justify-center align-center">
+                    <div id="pie"></div>
+                    </div>
+                </div>
+                <div class="r_order b-r-s">
+                    <div class="sales-loc d-flex f-wrap align-center justify-between">
+                        <h4>Recent Orders</h4>
+                        <div class="salesbtn">
+                            <button class="g_btn g_btn_prime">Generate report</button>
+                        </div>
+                    </div>
+                    <div class="t-o-f">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Amount</th>
+                                    <th>Vendor</th>
+                                    <th>Status</th>
+                                    <th>Rating</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="o_id">
+                                        <span>#VZ2112</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div class="r-od-img">
+                                                <img src="assets/img/avatar.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <span class="cust_name">Alex Smith</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Cloths</span>
+                                    </td>
+                                    <td>
+                                        <span class="amnt">$109.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Zoetic Fashion</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_status paid_status">Paid</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="cust_rat">5.0 <span>(61 votes)</span></h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="o_id">
+                                        <span>#VZ2912</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div class="r-od-img">
+                                                <img src="assets/img/avatar-2.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <span class="cust_name">Jansh Brown</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Kitchen Storage</span>
+                                    </td>
+                                    <td>
+                                        <span class="amnt">$149.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Micro Design</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_status pending_status">Pending</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="cust_rat">4.1 <span>(61 votes)</span></h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="o_id">
+                                        <span>#VZ2865</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div class="r-od-img">
+                                                <img src="assets/img/avatar-3.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <span class="cust_name">Ayaan Bowen</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Bike Accessories</span>
+                                    </td>
+                                    <td>
+                                        <span class="amnt">$215.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Nesta Technologies</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_status paid_status">Paid</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="cust_rat">4.9 <span>(89 votes)</span></h5>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="o_id">
+                                        <span>#VZ2187</span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-center">
+                                            <div class="r-od-img">
+                                                <img src="assets/img/avatar-4.jpg" alt="">
+                                            </div>
+                                            <div>
+                                                <span class="cust_name">Prezy Mark</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Furniture</span>
+                                    </td>
+                                    <td>
+                                        <span class="amnt">$199.00</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_name">Syntyce Solutions</span>
+                                    </td>
+                                    <td>
+                                        <span class="cust_status unpaid_status">Unpaid</span>
+                                    </td>
+                                    <td>
+                                        <h5 class="cust_rat">4.3 <span>(47 votes)</span></h5>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="o_id">
+                                            <span>#VZ2123</span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex align-center">
+                                                <div class="r-od-img">
+                                                    <img src="assets/img/avatar-6.jpg" alt="">
+                                                </div>
+                                                <div>
+                                                    <span class="cust_name">Vihan Hudda</span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="cust_name">Bags and Wallets</span>
+                                        </td>
+                                        <td>
+                                            <span class="amnt">$330.00</span>
+                                        </td>
+                                        <td>
+                                            <span class="cust_name">iTest Factory</span>
+                                        </td>
+                                        <td>
+                                            <span class="cust_status paid_status">Paid</span>
+                                        </td>
+                                        <td>
+                                            <h5 class="cust_rat">4.7<span>(161 votes)</span></h5>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <div class="d-flex f-wrap justify-between align-center">
+            <p>2024 © Velzon.</p>
+            <p>Design & Develop by Themesbrand</p>
+        </div>
+    </footer> -->
+
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/counter.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/chart.js"></script>
+
+    <!-- pie-chart -->
+    <script src="assets/js/pie-chart.js"></script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world-merc.js"></script>
+    <!-- <script src="assets/libs/jsvectormap/maps/world-merc.js"></script> -->
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
